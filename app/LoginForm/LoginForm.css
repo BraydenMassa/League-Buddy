@@ -1,0 +1,79 @@
+:root {
+	--light-blue: 69, 226, 250;
+	--blue: 32, 88, 162;
+	--dark-blue: 20, 49, 82;
+	--gray: 96, 101, 117;
+	--dark-gray: 42, 46, 59;
+}
+
+#login-form {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	height: 90vh;
+	background-color: rgb(var(--blue));
+	position: absolute;
+	left: 5%;
+	top: 5%;
+	align-items: center;
+	justify-content: space-between;
+	border-radius: 18px;
+	padding: 25px;
+}
+
+#login-form-header {
+	text-align: center;
+	background-color: rgb(var(--dark-blue));
+	color: whitesmoke;
+	font-size: 1.2rem;
+	width: 75%;
+	padding: 20px;
+	border-radius: 10px;
+	color: lightgray;
+}
+
+#login-form-inputs {
+	display: flex;
+	flex-direction: column;
+	height: 60%;
+	justify-content: space-between;
+	background-color: rgb(var(--gray));
+	border-radius: 15px;
+	padding: 30px;
+	align-items: center;
+}
+
+.login-form-input {
+	padding: 13px;
+	font-size: 1.1rem;
+	border-radius: 15px;
+	background-color: lightgray;
+}
+
+.login-form-input::placeholder {
+	color: rgb(var(--dark-gray));
+}
+
+#login-btn {
+	font-size: 1.2rem;
+	background-color: lightgray;
+	width: 40%;
+	padding: 8px;
+	border-radius: 15px;
+}
+
+.login-form-input,
+#login-btn,
+#login-form,
+#login-form-inputs {
+	border: 3px solid rgb(var(--dark-gray));
+}
+
+#login-form-register-link {
+	color: lightgray;
+	font-style: italic;
+}
+
+#login-form-register-link:hover {
+	transform: translateY(-3px);
+}
